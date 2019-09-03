@@ -1,0 +1,454 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://example.com/root.json",
+  "type": "object",
+  "title": "The Root Schema",
+  "properties": {
+    "server": {
+      "$id": "#/properties/server",
+      "type": "object",
+      "title": "The Server Schema",
+      "properties": {
+        "status": {
+          "$id": "#/properties/server/properties/status",
+          "type": "string",
+          "title": "The Status Schema",
+          "default": "",
+          "examples": [
+            "up"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "description": {
+          "$id": "#/properties/server/properties/description",
+          "type": "string",
+          "title": "The Description Schema",
+          "default": "",
+          "examples": [
+            "OpenCollective API"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "version": {
+          "$id": "#/properties/server/properties/version",
+          "type": "string",
+          "title": "The Version Schema",
+          "default": "",
+          "examples": [
+            "0.0.5"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "uuid": {
+          "$id": "#/properties/server/properties/uuid",
+          "type": "string",
+          "title": "The Uuid Schema",
+          "default": "",
+          "examples": [
+            "330d9cc6-7d40-4964-888c-4d2817905ee1"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "pid": {
+          "$id": "#/properties/server/properties/pid",
+          "type": "integer",
+          "title": "The Pid Schema",
+          "default": 0,
+          "examples": [
+            90603
+          ]
+        },
+        "totalTime": {
+          "$id": "#/properties/server/properties/totalTime",
+          "type": "number",
+          "title": "The Totaltime Schema",
+          "default": 0.0,
+          "examples": [
+            4020.3912830000004
+          ]
+        },
+        "averageTime": {
+          "$id": "#/properties/server/properties/averageTime",
+          "type": "number",
+          "title": "The Averagetime Schema",
+          "default": 0.0,
+          "examples": [
+            446.7101425555556
+          ]
+        },
+        "uptime": {
+          "$id": "#/properties/server/properties/uptime",
+          "type": "integer",
+          "title": "The Uptime Schema",
+          "default": 0,
+          "examples": [
+            63881
+          ]
+        },
+        "uptimeHumanReadable": {
+          "$id": "#/properties/server/properties/uptimeHumanReadable",
+          "type": "string",
+          "title": "The Uptimehumanreadable Schema",
+          "default": "",
+          "examples": [
+            "1m 4s"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "statusCodes": {
+          "$id": "#/properties/server/properties/statusCodes",
+          "type": "object",
+          "title": "The Statuscodes Schema",
+          "properties": {
+            "200": {
+              "$id": "#/properties/server/properties/statusCodes/properties/200",
+              "type": "integer",
+              "title": "The 200 Schema",
+              "default": 0,
+              "examples": [
+                5
+              ]
+            },
+            "404": {
+              "$id": "#/properties/server/properties/statusCodes/properties/404",
+              "type": "integer",
+              "title": "The 404 Schema",
+              "default": 0,
+              "examples": [
+                4
+              ]
+            }
+          }
+        },
+        "requests": {
+          "$id": "#/properties/server/properties/requests",
+          "type": "object",
+          "title": "The Requests Schema",
+          "properties": {
+            "total": {
+              "$id": "#/properties/server/properties/requests/properties/total",
+              "type": "integer",
+              "title": "The Total Schema",
+              "default": 0,
+              "examples": [
+                1
+              ]
+            },
+            "last_minute": {
+              "$id": "#/properties/server/properties/requests/properties/last_minute",
+              "type": "integer",
+              "title": "The Last_minute Schema",
+              "default": 0,
+              "examples": [
+                0
+              ]
+            },
+            "last_5mn_avg": {
+              "$id": "#/properties/server/properties/requests/properties/last_5mn_avg",
+              "type": "integer",
+              "title": "The Last_5mn_avg Schema",
+              "default": 0,
+              "examples": [
+                0
+              ]
+            },
+            "last_15mn_avg": {
+              "$id": "#/properties/server/properties/requests/properties/last_15mn_avg",
+              "type": "integer",
+              "title": "The Last_15mn_avg Schema",
+              "default": 0,
+              "examples": [
+                0
+              ]
+            }
+          }
+        },
+        "endpointStats": {
+          "$id": "#/properties/server/properties/endpointStats",
+          "type": "object",
+          "title": "The Endpointstats Schema",
+          "properties": {
+            "GET /long": {
+              "$id": "#/properties/server/properties/endpointStats/properties/GET /long",
+              "type": "object",
+              "title": "The Get /long Schema",
+              "properties": {
+                "totalTime": {
+                  "$id": "#/properties/server/properties/endpointStats/properties/GET /long/properties/totalTime",
+                  "type": "number",
+                  "title": "The Totaltime Schema",
+                  "default": 0.0,
+                  "examples": [
+                    4009.410922
+                  ]
+                },
+                "averageTime": {
+                  "$id": "#/properties/server/properties/endpointStats/properties/GET /long/properties/averageTime",
+                  "type": "number",
+                  "title": "The Averagetime Schema",
+                  "default": 0.0,
+                  "examples": [
+                    2004.705461
+                  ]
+                },
+                "count": {
+                  "$id": "#/properties/server/properties/endpointStats/properties/GET /long/properties/count",
+                  "type": "integer",
+                  "title": "The Count Schema",
+                  "default": 0,
+                  "examples": [
+                    2
+                  ]
+                },
+                "statusCodes": {
+                  "$id": "#/properties/server/properties/endpointStats/properties/GET /long/properties/statusCodes",
+                  "type": "object",
+                  "title": "The Statuscodes Schema",
+                  "properties": {
+                    "200": {
+                      "$id": "#/properties/server/properties/endpointStats/properties/GET /long/properties/statusCodes/properties/200",
+                      "type": "integer",
+                      "title": "The 200 Schema",
+                      "default": 0,
+                      "examples": [
+                        2
+                      ]
+                    }
+                  }
+                }
+              }
+            },
+            "GET /favicon.ico": {
+              "$id": "#/properties/server/properties/endpointStats/properties/GET /favicon.ico",
+              "type": "object",
+              "title": "The Get /favicon.ico Schema",
+              "properties": {
+                "totalTime": {
+                  "$id": "#/properties/server/properties/endpointStats/properties/GET /favicon.ico/properties/totalTime",
+                  "type": "number",
+                  "title": "The Totaltime Schema",
+                  "default": 0.0,
+                  "examples": [
+                    4.286955
+                  ]
+                },
+                "averageTime": {
+                  "$id": "#/properties/server/properties/endpointStats/properties/GET /favicon.ico/properties/averageTime",
+                  "type": "number",
+                  "title": "The Averagetime Schema",
+                  "default": 0.0,
+                  "examples": [
+                    1.07173875
+                  ]
+                },
+                "count": {
+                  "$id": "#/properties/server/properties/endpointStats/properties/GET /favicon.ico/properties/count",
+                  "type": "integer",
+                  "title": "The Count Schema",
+                  "default": 0,
+                  "examples": [
+                    4
+                  ]
+                },
+                "statusCodes": {
+                  "$id": "#/properties/server/properties/endpointStats/properties/GET /favicon.ico/properties/statusCodes",
+                  "type": "object",
+                  "title": "The Statuscodes Schema",
+                  "properties": {
+                    "404": {
+                      "$id": "#/properties/server/properties/endpointStats/properties/GET /favicon.ico/properties/statusCodes/properties/404",
+                      "type": "integer",
+                      "title": "The 404 Schema",
+                      "default": 0,
+                      "examples": [
+                        4
+                      ]
+                    }
+                  }
+                }
+              }
+            },
+            "GET /stats": {
+              "$id": "#/properties/server/properties/endpointStats/properties/GET /stats",
+              "type": "object",
+              "title": "The Get /stats Schema",
+              "properties": {
+                "totalTime": {
+                  "$id": "#/properties/server/properties/endpointStats/properties/GET /stats/properties/totalTime",
+                  "type": "number",
+                  "title": "The Totaltime Schema",
+                  "default": 0.0,
+                  "examples": [
+                    6.227342999999999
+                  ]
+                },
+                "averageTime": {
+                  "$id": "#/properties/server/properties/endpointStats/properties/GET /stats/properties/averageTime",
+                  "type": "number",
+                  "title": "The Averagetime Schema",
+                  "default": 0.0,
+                  "examples": [
+                    6.227342999999999
+                  ]
+                },
+                "count": {
+                  "$id": "#/properties/server/properties/endpointStats/properties/GET /stats/properties/count",
+                  "type": "integer",
+                  "title": "The Count Schema",
+                  "default": 0,
+                  "examples": [
+                    1
+                  ]
+                },
+                "statusCodes": {
+                  "$id": "#/properties/server/properties/endpointStats/properties/GET /stats/properties/statusCodes",
+                  "type": "object",
+                  "title": "The Statuscodes Schema",
+                  "properties": {
+                    "200": {
+                      "$id": "#/properties/server/properties/endpointStats/properties/GET /stats/properties/statusCodes/properties/200",
+                      "type": "integer",
+                      "title": "The 200 Schema",
+                      "default": 0,
+                      "examples": [
+                        1
+                      ]
+                    }
+                  }
+                }
+              }
+            },
+            "GET /user/:id": {
+              "$id": "#/properties/server/properties/endpointStats/properties/GET /user/:id",
+              "type": "object",
+              "title": "The Get /user/:id Schema",
+              "properties": {
+                "totalTime": {
+                  "$id": "#/properties/server/properties/endpointStats/properties/GET /user/:id/properties/totalTime",
+                  "type": "number",
+                  "title": "The Totaltime Schema",
+                  "default": 0.0,
+                  "examples": [
+                    0.466063
+                  ]
+                },
+                "averageTime": {
+                  "$id": "#/properties/server/properties/endpointStats/properties/GET /user/:id/properties/averageTime",
+                  "type": "number",
+                  "title": "The Averagetime Schema",
+                  "default": 0.0,
+                  "examples": [
+                    0.2330315
+                  ]
+                },
+                "count": {
+                  "$id": "#/properties/server/properties/endpointStats/properties/GET /user/:id/properties/count",
+                  "type": "integer",
+                  "title": "The Count Schema",
+                  "default": 0,
+                  "examples": [
+                    2
+                  ]
+                },
+                "statusCodes": {
+                  "$id": "#/properties/server/properties/endpointStats/properties/GET /user/:id/properties/statusCodes",
+                  "type": "object",
+                  "title": "The Statuscodes Schema",
+                  "properties": {
+                    "200": {
+                      "$id": "#/properties/server/properties/endpointStats/properties/GET /user/:id/properties/statusCodes/properties/200",
+                      "type": "integer",
+                      "title": "The 200 Schema",
+                      "default": 0,
+                      "examples": [
+                        2
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "customStats": {
+          "$id": "#/properties/server/properties/customStats",
+          "type": "object",
+          "title": "The Customstats Schema",
+          "properties": {
+            "long": {
+              "$id": "#/properties/server/properties/customStats/properties/long",
+              "type": "object",
+              "title": "The Long Schema",
+              "properties": {
+                "totalTime": {
+                  "$id": "#/properties/server/properties/customStats/properties/long/properties/totalTime",
+                  "type": "number",
+                  "title": "The Totaltime Schema",
+                  "default": 0.0,
+                  "examples": [
+                    4005.556455
+                  ]
+                },
+                "averageTime": {
+                  "$id": "#/properties/server/properties/customStats/properties/long/properties/averageTime",
+                  "type": "number",
+                  "title": "The Averagetime Schema",
+                  "default": 0.0,
+                  "examples": [
+                    2002.7782275
+                  ]
+                },
+                "started": {
+                  "$id": "#/properties/server/properties/customStats/properties/long/properties/started",
+                  "type": "integer",
+                  "title": "The Started Schema",
+                  "default": 0,
+                  "examples": [
+                    2
+                  ]
+                },
+                "count": {
+                  "$id": "#/properties/server/properties/customStats/properties/long/properties/count",
+                  "type": "integer",
+                  "title": "The Count Schema",
+                  "default": 0,
+                  "examples": [
+                    2
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "git": {
+      "$id": "#/properties/git",
+      "type": "object",
+      "title": "The Git Schema",
+      "properties": {
+        "branch": {
+          "$id": "#/properties/git/properties/branch",
+          "type": "string",
+          "title": "The Branch Schema",
+          "default": "",
+          "examples": [
+            "master"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "sha": {
+          "$id": "#/properties/git/properties/sha",
+          "type": "string",
+          "title": "The Sha Schema",
+          "default": "",
+          "examples": [
+            "1f86caa"
+          ],
+          "pattern": "^(.*)$"
+        }
+      }
+    }
+  }
+}

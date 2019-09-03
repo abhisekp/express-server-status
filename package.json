@@ -7,7 +7,7 @@
     "test": "test"
   },
   "scripts": {
-    "test": "npm test"
+    "test": "jest --forceExit --detectOpenHandles"
   },
   "repository": {
     "type": "git",
@@ -29,7 +29,14 @@
   },
   "homepage": "https://github.com/OpenCollective/express-server-status#readme",
   "dependencies": {
-    "express": "^4.13.3",
+    "@phil-r/stats": "^1.4.1",
+    "express": "^4.17.1",
     "moment": "^2.11.1"
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.18",
+    "jest": "^24.9.0",
+    "jest-json-schema": "^2.0.2",
+    "supertest": "^4.0.2"
   }
 }
