@@ -39,7 +39,7 @@ setInterval(resetCounter, 60 * 1000);
 
 module.exports = function(app, options) {
   options = options || {};
-  Object.assign(
+  options = Object.assign(
     {
       endpointStats: true,
       complexEndpoints: [],
